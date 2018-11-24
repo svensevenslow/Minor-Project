@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+	<body>
+		<h1> {{movie}} </h1>
+		{% for reco in recos %}
+		<li>{% block loop_item scoped %}{{ reco }}{% endblock %}</li>
+		{% endfor %}
+	</body>
+</html>
