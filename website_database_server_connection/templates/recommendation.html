@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+	<body>
+		Hello Boss!  <a href='/logout'>Logout</a>
+		<h1> Recommendations</h1>
+		{% for movie in movie_list %}
+		<li>{% block loop_item scoped %}{{ movie[0] }}{% endblock %}</li>
+		{% endfor %}
+	</body>
+</html>
