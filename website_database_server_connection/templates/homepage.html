@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Website</title>
+	<meta name="viewport" content="width-device-width",initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+  
+
+</head> 
+<header>
+	
+	<div class="navbar-header">
+      <!--<a class="navbar-brand" href="/">-->
+	  <img style="max-width:120px; margin-top: -7px;" src="{{url_for('static',filename='images/mainlogob.jpg')}}">
+	 <!-- </a>-->
+    </div>
+    <div class = "container-fluid"> 
+    	<ul class="nav navbar-nav navbar-right">
+    		<div style="margin-right: 10px; margin-left: 15px; margin-top: 5px; margin-bottom: 5px;"  class="container-fluid">
+			<h5>
+				<a href="{{url_for('home_page')}}" class="btn btn-info" role="button">Login</a>
+				<a href="{{url_for('redirect_user')}}" class="btn btn-info" role="button">Sign-up</a>
+                      
+				
+	  
+      </ul>
+
+	</ul>
+	
+	</div>
+	
+</header>
+						  
+</header>
+
+<body bgcolor="#E6E6FA">
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+<div class="text-center">
+  <img src="{{url_for('static',filename='images/homepage.jpg')}}" class="rounded" alt="Responsive image">
+</div>
+	
+	
+</body>
+</html>
